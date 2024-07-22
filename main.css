@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --branco : white;
+    --cinza : rgb(232, 232, 232);
+    --preto: rgb(0, 0, 0);
+}
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+body{
+    background-color: var(--cinza);
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: var(--branco) ;
+    padding: 20px;
+    align-items: center;
+    font-size: 13pt;
+  
+}
+.logo{
+    font-size: 22pt;
+    font-weight: bold;
+}
+nav a, nav i{
+    text-decoration: none;
+    color: black;
+    transition: all .5 ease;
+    cursor: pointer;
+}
+nav i:hover{
+    transform: scale(1.2);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav div{
+    display: flex;
+    gap: 25px;
+}
+
+
+
+main{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    padding-top: 180px;
+    background-color: var(--branco);
+    justify-content: center;
+    gap: 5px;
+}
+main img{
+    height: 500px;
+    transform: rotate(20deg);
+    border-radius: 50%;
+}
+main article:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    justify-content: center;
+    margin-top: -100px;
+}
+main article h1{
+    font-size: 30pt;
+}
+main button{
+    padding: 10px;
+    width: 35%;
+    border: none ;
+    color: white;
+    background-color: var(--preto);
+    font-size: 13.5pt;
+    border-radius: 5px;
+}
+button{
+    cursor: pointer;
+    transition: all ease .5s;
+}
+button:active{
+    transform: translateY(4px);
+}
+
+section{
+    min-height: 80vh;
+    padding: 100px 50px;
+    overflow: hidden;
+}
+
+
+.produtosPopulares{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.elements{
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+.elements button{
+    padding: 4px;
+    border: none;
+    background-color: transparent;
+    font-size: 13.5pt;
+}
+.cardGlide{
+    display: grid;
+    gap: 20px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 30px;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+}
+figure img{
+    height: 200px;
+    width: 150px;
+}
+figcaption{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+figcaption > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+figcaption div > i{
+    color: rgb(241, 215, 67);
+}
+figcaption p{
+    color: rgb(34, 136, 232);
+}
+
+.verMais{
+    padding: 10px;
+    border : none;
+    width: 300px;
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 5px;
+    font-size: 14pt;
+    margin-top: 40px;
+}
+.marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    margin-top: 100px;
+}
+.marcas img{
+    height: 60px;
+}
+.subscreve{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.subscreve div{
+    display: flex;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.subscreve form{
+    width: 50%;
+    display: flex;
+    height: 40px;
+}
+.subscreve input{
+    width: 350px;
+    padding: 0px 10px;
+    font-size: 13pt;
+    background-color: var(--branco);
+    border: none;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.subscreve h1{
+    font-size: 22pt;
+}
+.subscreve button{
+    height: 100%;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(6, 142, 170);
+    color: white;
+    padding: 0px 10px;
+}
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--branco);
+    padding: 20px;
+    border-left: solid 4px;
+    position: relative;
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 5px rgb(138, 138, 138);
+    transition: all .5s ease;
+}
+.pagamento:hover{
+    scale: 1.05;
+}
+.pagamento >p{
+    padding-left: 60px;
+    text-align: justify;
+}
+
+
+.pagamento span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14pt;
+}
+.pagamento i{
+    font-size: 30pt;
+    cursor: pointer;
+}
+
+#h2{
+    text-align: center;
+}
+.pagamentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.home, .textoMain,.cardGlide,.header,.subscreve,.pagamentos{
+    visibility: hidden;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+footer article{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#social{
+    flex-direction: row;
+    gap: 20px;
+}
+footer i{
+    font-size: 22pt;
+}
