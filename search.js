@@ -1,9 +1,10 @@
 
+import { AddInCard } from "./js/addToCard.mjs"
+
 
 let categories = document.querySelectorAll("ul a")
 
 let searchTitle = document.getElementById("searchTitle")
-
 
 categories.forEach(category =>{
     category.addEventListener("click",Active)
@@ -21,9 +22,11 @@ function Active(e){
     if(title == "Todos"){
         return
     }else{
-        
+
         //API
         alert(title)
     }
 
 }
+
+AddInCard()

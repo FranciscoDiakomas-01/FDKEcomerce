@@ -20,6 +20,7 @@
 .logo{
     font-size: 22pt;
     font-weight: bold;
+    
 }
 
 main{
@@ -28,6 +29,19 @@ main{
     height: 100vh;
     padding: 10px;
     background-color: rgb(236, 236, 236);
+}
+
+header i {
+    font-size: 16pt;
+    margin-right: 10px;
+}
+
+
+#TotalCardItens{
+    position: absolute;
+    top: 12px;
+    font-size: 13pt;
+    right: 5px;
 }
 
 main > nav{
@@ -137,12 +151,20 @@ button{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     gap: 20px;
-    align-items: center;
     justify-content: center;
     padding: 40px;
     overflow-y: scroll;
     height: 85dvh;
     padding-bottom: 70px;
+}
+
+h4{
+    font-weight: normal;
+    color: rgb(6, 111, 209);
+}
+#ProductReact{
+    font-size: 20pt;
+    cursor: pointer;
 }
 
 .product{
@@ -153,9 +175,10 @@ button{
     align-items: center;
     background-color: white;
     border-radius: 10px;
+    max-height: 280px;
 }
 
-.product > span , .product > i{
+.product > span {
     position: absolute;
 }
 .product > span{
@@ -165,15 +188,6 @@ button{
     top: 0;
     border-top-left-radius: 10px;
     color: white;
-}
-.product > i{
-    right: 0;
-    top: 0;
-    padding: 10px;
-}
-
-.product > i:active{
-    color: red;
 }
 figure{
     display: flex;
@@ -197,11 +211,9 @@ figcaption div{
     justify-content: space-between;
 }
 figcaption button{
-    height: 30px;
-    width: 50px;
-    border-radius: 4px;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: black;
+    font-size: 18pt;
     border: none;
 }
 

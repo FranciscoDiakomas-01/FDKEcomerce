@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDK-Search</title>
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <main>
@@ -45,16 +47,16 @@
                 <details>
                     <summary>Cor</summary>
                     <div>
-                        <input type="checkbox" name="" value="HP"> <label for="">Branco</label>
+                        <input type="checkbox" name="color" value="HP"> <label for="">Branco</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="" value="HP"> <label for="">Preto</label>
+                        <input type="checkbox" name="color" value="HP"> <label for="">Preto</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="" value="HP"> <label for="">Vermelho</label>
+                        <input type="checkbox" name="color" value="HP"> <label for="">Vermelho</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="" value="HP"> <label for="">Azul</label>
+                        <input type="checkbox" name="color" value="HP"> <label for="">Azul</label>
                     </div>
                 </details>
 
@@ -71,9 +73,9 @@
                     </form>
                     
                     <div>
-                        <button>Carrd</button>
-                        <button>DashBoard</button>
-                        <i>User</i>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <i id="TotalCardItens"></i>
                     </div>
                     
                 </nav>
@@ -85,142 +87,49 @@
 
                 <div id="products">
                     <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
+                        <span id="ProductSatus">New</span>
                         <figure>
                             <img src="./capa.jpg" alt="cover">
                             <figcaption>
-                                <h3>TitleProduct</h3>
+                                <h3 id="ProductName">HP ElitteBook</h3>
+                                <h4 id="ProdutcDesc">Core I5  7<sup>th</sup> gen</h4>
                                 <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
+                                    <span class="price" id="ProdutPrice">AOA 5000</span>
+                                    <button >
+                                        <i class="fa-solid fa-cart-shopping" data-price="5000" data-name="HP ElitteBook" data-description="Core I5  7th gen" data-image="./capa.jpg" data-status="New"></i>
+                                    </button>
                                 </div>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
+                        <span id="ProductSatus">New</span>
                         <figure>
                             <img src="./capa.jpg" alt="cover">
                             <figcaption>
-                                <h3>TitleProduct</h3>
+                                <h3 id="ProductName">Fone Drangon</h3>
+                                <h4 id="ProdutcDesc">Tubine 07</h4>
                                 <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
+                                    <span class="price" id="ProdutPrice">AOA 3000</span>
+                                    <button >
+                                        <i class="fa-solid fa-cart-shopping" data-price="3000" data-name="Fone Drangon" data-description="Tubine 07" data-image="./capa.jpg" data-status="New"></i>
+                                    </button>
                                 </div>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
+                        <span id="ProductSatus">New</span>
                         <figure>
                             <img src="./capa.jpg" alt="cover">
                             <figcaption>
-                                <h3>TitleProduct</h3>
+                                <h3 id="ProductName">Fone Drangon</h3>
+                                <h4 id="ProdutcDesc">Tubine 07</h4>
                                 <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="product">
-                        <span>New</span>
-                        <i>Hearth</i>
-                        <figure>
-                            <img src="./capa.jpg" alt="cover">
-                            <figcaption>
-                                <h3>TitleProduct</h3>
-                                <div>
-                                    <span class="price">0000</span>
-                                    <button>Add</button>
+                                    <span class="price" id="ProdutPrice">AOA 3000</span>
+                                    <button >
+                                        <i class="fa-solid fa-cart-shopping" data-price="3000" data-name="Fone" data-description="Tubine 07" data-image="./capa.jpg" data-status="New"></i>
+                                    </button>
                                 </div>
                             </figcaption>
                         </figure>
@@ -231,5 +140,6 @@
     </main>
 
     <script type="module" src="search.js" defer></script>
+    <script type="module" src="scrollRevel.js" defer></script>
 </body>
 </html>

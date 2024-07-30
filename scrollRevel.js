@@ -54,5 +54,3 @@ ScrollReveal({
     duration: 700,
     reset : true
 }).reveal(".rodape");
-
-
